@@ -52,10 +52,8 @@ class NotManifest {
 
   void _fromJSON(Map<String, dynamic> json) {
     json.forEach((key, value) {
-      print('add model $key');
       _models.addEntries([MapEntry(key, NotModel.fromJSON(value))]);
     });
-    print(_models['user'].toString());
   }
 
   void reset() {
