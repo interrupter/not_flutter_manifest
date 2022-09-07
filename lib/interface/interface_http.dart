@@ -59,7 +59,7 @@ class NotInterfaceHTTP implements NotInterface {
       Map<String, dynamic> opts = {};
       Map<String, String> headers = {};
       headers.addAll(req.getHeaders());
-      headers.addAll(NotManifestCredatials().getHeaders());
+      headers.addAll(NotManifestCredentials().getHeaders());
       opts['method'] = actionData['method'];
       return NotInterfaceHTTP.requestByDio(
         apiServerURL,

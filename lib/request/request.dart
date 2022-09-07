@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:not_flutter_manifest/credentials.dart';
+
 import 'filter.dart';
 import '../interface/interface_http.dart';
 import '../interface/interface_ws.dart';
@@ -108,6 +110,7 @@ class NotRequest<T> {
     _actionData = notModel.getAction(actionName).asMap();
     _prefix = notModel.url;
     _payload = payload;
+    _headers.addEntries(NotManifestCredentials().getHeaders());
   }
 
   Future<NotResponse> getResponse() {

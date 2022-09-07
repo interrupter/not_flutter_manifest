@@ -1,7 +1,7 @@
 name: not_flutter_manifest
 description: Not not-node manifest interface client side for Flutter
 publish_to: 'none'
-version: 0.1.1+1
+version: 0.1.2+1
 environment:
   sdk: ">=2.17.1 <3.0.0"
 dependencies:

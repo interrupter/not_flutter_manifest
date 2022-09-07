@@ -1,10 +1,10 @@
 //Authorization: Basic
 
-class NotManifestCredatials {
-  static final NotManifestCredatials _shared =
-      NotManifestCredatials._sharedInstance();
-  NotManifestCredatials._sharedInstance();
-  factory NotManifestCredatials() => _shared;
+class NotManifestCredentials {
+  static final NotManifestCredentials _shared =
+      NotManifestCredentials._sharedInstance();
+  NotManifestCredentials._sharedInstance();
+  factory NotManifestCredentials() => _shared;
 
   String _token = '';
 

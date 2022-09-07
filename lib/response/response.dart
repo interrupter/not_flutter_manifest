@@ -33,6 +33,7 @@ class NotResponse {
   NotResponse.fromDioResponse(Response res) {
     statusCode = res.statusCode;
     statusMessage = res.statusMessage;
+
     if (res.statusCode == 200) {
       isRedirect = res.isRedirect ?? false;
       if (res.data != null) {
